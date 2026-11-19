@@ -2,25 +2,16 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Genova",
-    short_name: "GENOVA",
-    description: "A Progressive Web App built with Next.js",
-    start_url: "/",
+    name: "Genova AI",
+    short_name: "Genova",
+    description: "Generate images, remove backgrounds and upscale — in one studio.",
+    start_url: "/dashboard",
     display: "standalone",
-    theme_color: "#24386c",
-    background_color: "#0b317c",
-
+    theme_color: "#050508",
+    background_color: "#050508",
     icons: [
-      {
-        src: "/Glogo.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "/Glogo.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
+      { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
     ],
   };
 }
